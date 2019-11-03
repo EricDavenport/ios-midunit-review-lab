@@ -22,7 +22,12 @@ Output: `HeLlO, tHeRe`
 Input: `Hello, there`
 
 Output: `Hllo, thr`
+```
+var str = "Hello, there"
+var withoutEs = str.replacingOccurrences(of: "e", with: "")
 
+print(withoutEs)
+```
 
 ## Arrays
 
@@ -32,24 +37,63 @@ Output: `Hllo, thr`
 Input: `[1,5,2,4,1,4]`
 
 Output: `5`
+```
+var array2 = [1,5,2,4,1,4]
+var largest = 0
+for num in array2 {
+    if num > largest {
+        largest = num
+    }
+}
+print(largest)
+```
 
 2. **Given an array of type [Int], return the smallest element**
 
 Input: `[1,5,2,4,1,4]`
 
 Output: `1`
+```
+var array2 = [1,5,2,4,1,4]
+var smallest = Int.min
+for num in array2 {
+    if num < smallest {
+        smallest = num
+    }
+}
+print(smallest)
+```
 
 3. **Given an array of type [Int], return its sum**
 
 Input: `[1,5,2,4,1,4]`
 
 Output: `17`
+```
+var array2c = [1,5,2,4,1,4]
+var sum: Int = 0
+for num in array2c {
+    sum = sum + num
+}
+print(sum)
+```
 
 4. **Given an array of type [Double], return its average**
 
 Input: `[3,4.5,7.5,2,1]`
 
 Output: `3.6`
+```
+var average: Double = 0.0
+var array2d = [3,4.5,7.5,2,1]
+var total = 0.0
+var countAmount = Double(array2d.count)
+for num in array2d {
+    total = total + num
+    average = total / countAmount
+}
+print(average)
+```
 
 5. **Given an array of type [Double] and a Double, return the sum of all numbers in the array greater than a given number**
 
